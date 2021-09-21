@@ -1,0 +1,1 @@
+# sjp-ski-page
