@@ -13,7 +13,7 @@ p {
 </head>
 <body>
 
-<p style="color:rgb(255,255,255);"id="demo"></p>
+<p style="color:rgb(255,255,25);"id="demo"></p>
 
 <script>
 // Set the date we're counting down to
