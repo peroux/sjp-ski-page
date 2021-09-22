@@ -46,7 +46,7 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 <h1>
-<p style="color:rgb(255,255,255);">UNTIL SKI SEASON STARTS!!!</p>
+<p style="color:rgb(255,255,25);">UNTIL SKI SEASON STARTS!!!</p>
 <style>
 body {
   background-image: url('https://i.imgur.com/lzrZar4.png');
