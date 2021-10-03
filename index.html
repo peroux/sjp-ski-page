@@ -1,22 +1,13 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-</style>
-</head>
 <body>
 
-<p style="color:rgb(255,255,255);"id="demo"></p>
+<center><h1 style="color:rgb(0,0,0);"id="demo"></h1></center>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 15, 2021 14:30:00").getTime();
+var countDownDate = new Date("Nov 15, 2021 15:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -40,20 +31,41 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "0 SECONDS";
   }
 }, 1000);
 </script>
 <h1>
-<p style="color:rgb(255,255,255);">UNTIL SKI SEASON STARTS!!!</p>
-<style>
-body {
-  background-image: url('https://i.imgur.com/lzrZar4.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-}
-</style>
+<center><p style="color:rgb(0,0,0);">UNTIL SKI SEASON STARTS!!!</p></center>
+  <center><a href="/peroux/skigame.html"></a><center>
 </h1>
 </body>
+<html>
+   <head>
+      <title>change picture</title>
+      <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 86400000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "https://i.imgur.com/cg5pj0l.jpg";
+          images[1] = "https://i.imgur.com/0z57I2k.jpg";
+          images[2] = "https://i.imgur.com/NbDA567.png";
+      </script>
+   </head>
+
+   <body onload = "startTimer()">
+       <img id="img" src="https://i.imgur.com/lzrZar4.png"/>
+       </body>
 </html>
